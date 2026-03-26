@@ -1,19 +1,19 @@
 "use client";
 
 import {
-  Zap,
   Code2,
   Shield,
   Rocket,
-  Brain,
-  GitBranch,
   Check,
   ArrowRight,
-  Terminal,
   Sparkles,
   ShieldCheck,
-  Clock,
-  ScanSearch,
+  FileSearch,
+  Scale,
+  BadgeCheck,
+  BookOpen,
+  BarChart3,
+  Lock,
 } from "lucide-react";
 
 /* ───────────────────────── Hero ───────────────────────── */
@@ -21,88 +21,86 @@ function Hero() {
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 text-center">
       {/* glow */}
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/20 blur-[120px]" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-500/15 blur-[120px]" />
 
-      <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 px-4 py-1.5 text-sm text-zinc-400">
-        <ShieldCheck size={14} className="text-emerald-400" />
-        AI Security &amp; Code Modernization
+      <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-amber-500/20 bg-amber-950/30 px-4 py-1.5 text-sm text-amber-300">
+        <Shield size={14} />
+        Technical Due Diligence Platform
       </span>
 
       <h1 className="max-w-4xl text-5xl font-bold leading-[1.1] tracking-tight sm:text-7xl">
-        Your AI code is{" "}
-        <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
-          broken
-        </span>
-        .{" "}
-        <br className="hidden sm:block" />
-        We fix &amp; deploy it{" "}
-        <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
-          in 1 hour
+        We prepare your code for{" "}
+        <span className="bg-gradient-to-r from-amber-300 to-yellow-500 bg-clip-text text-transparent">
+          investor review
         </span>
       </h1>
 
       <p className="mt-6 max-w-2xl text-lg text-zinc-400 sm:text-xl">
-        We take your legacy or AI-generated code, clean it to production standards
-        (UCD Dublin Full Stack methodology), and deploy it — before your coffee gets cold.
+        Certified technical audit by a Full Stack Architect (UCD Dublin, Merit).
+        We verify architecture, security, scalability, and code quality — so your
+        investors don&apos;t have to trust. They verify.
       </p>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
         <a
           href="#pricing"
-          className="group inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-7 py-3.5 font-semibold text-white transition hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-500/20"
+          className="group inline-flex items-center gap-2 rounded-lg bg-amber-500 px-7 py-3.5 font-semibold text-black transition hover:bg-amber-400 hover:shadow-lg hover:shadow-amber-500/20"
         >
-          <ScanSearch size={18} />
-          Get a Free Code Audit in 5 Minutes
+          <Scale size={18} />
+          Request Quote for Due Diligence
           <ArrowRight size={16} className="transition group-hover:translate-x-1" />
         </a>
       </div>
 
-      {/* value props */}
+      {/* credentials bar */}
       <div className="mt-14 flex flex-wrap items-center justify-center gap-8 text-sm text-zinc-500">
         <span className="inline-flex items-center gap-2">
-          <ShieldCheck size={16} className="text-emerald-400" />
-          Security-first refactoring
+          <BadgeCheck size={16} className="text-amber-400" />
+          UCD Dublin Certified
         </span>
         <span className="inline-flex items-center gap-2">
-          <Clock size={16} className="text-emerald-400" />
-          Deployed in under 1 hour
+          <BookOpen size={16} className="text-amber-400" />
+          700+ hours verified expertise
         </span>
         <span className="inline-flex items-center gap-2">
-          <Sparkles size={16} className="text-emerald-400" />
-          UCD Dublin standards
+          <Lock size={16} className="text-amber-400" />
+          NDA-ready process
         </span>
       </div>
 
-      {/* terminal preview */}
-      <div className="mt-16 w-full max-w-3xl overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl shadow-emerald-500/5">
-        <div className="flex items-center gap-2 border-b border-zinc-800 px-4 py-3">
-          <span className="h-3 w-3 rounded-full bg-red-500/80" />
-          <span className="h-3 w-3 rounded-full bg-yellow-500/80" />
-          <span className="h-3 w-3 rounded-full bg-green-500/80" />
-          <span className="ml-2 text-xs text-zinc-500">codesaas audit</span>
+      {/* report preview */}
+      <div className="mt-16 w-full max-w-3xl overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl shadow-amber-500/5">
+        <div className="flex items-center justify-between border-b border-zinc-800 px-5 py-3">
+          <div className="flex items-center gap-2">
+            <span className="h-3 w-3 rounded-full bg-red-500/80" />
+            <span className="h-3 w-3 rounded-full bg-yellow-500/80" />
+            <span className="h-3 w-3 rounded-full bg-green-500/80" />
+          </div>
+          <span className="text-xs font-medium text-amber-400/60">CODESAAS DUE DILIGENCE REPORT</span>
         </div>
-        <div className="p-6 font-mono text-sm leading-relaxed text-zinc-300">
-          <p>
-            <span className="text-emerald-400">$</span> codesaas audit ./client-project
-          </p>
-          <p className="mt-2 text-red-400">
-            Found 23 issues: 4 critical (XSS, SQL injection), 8 warnings, 11 style
-          </p>
-          <p className="text-zinc-500">Fixing critical vulnerabilities...</p>
-          <p className="text-zinc-500">Refactoring to production standards...</p>
-          <p className="text-zinc-500">Running test suite... 47/47 passed</p>
-          <p className="mt-2 text-emerald-400">
-            Clean build. Deploying to production... Live at client-app.vercel.app
-          </p>
-          <p className="mt-1 text-zinc-600">Total time: 52 minutes</p>
+        <div className="p-6 text-left font-mono text-sm leading-relaxed text-zinc-300">
+          <p className="text-amber-400 font-semibold">Executive Summary — Series A Readiness</p>
+          <p className="mt-3 text-zinc-500">Client: [REDACTED] &mdash; FinTech SaaS, 140k LOC</p>
+          <div className="mt-4 space-y-1.5">
+            <p><span className="text-red-400">CRITICAL</span> &nbsp;Authentication bypass in /api/auth &mdash; JWT not validated</p>
+            <p><span className="text-red-400">CRITICAL</span> &nbsp;SQL injection in search endpoint &mdash; raw query interpolation</p>
+            <p><span className="text-yellow-400">WARNING&nbsp;</span> &nbsp;No rate limiting on public API &mdash; DDoS exposure</p>
+            <p><span className="text-yellow-400">WARNING&nbsp;</span> &nbsp;Database migrations not versioned &mdash; rollback impossible</p>
+            <p><span className="text-emerald-400">PASS&nbsp;&nbsp;&nbsp;&nbsp;</span> &nbsp;CI/CD pipeline &mdash; GitHub Actions, automated tests</p>
+            <p><span className="text-emerald-400">PASS&nbsp;&nbsp;&nbsp;&nbsp;</span> &nbsp;Infrastructure &mdash; containerized, horizontally scalable</p>
+          </div>
+          <div className="mt-4 border-t border-zinc-800 pt-4">
+            <p className="text-amber-400">Verdict: 4 blockers must be resolved before closing round</p>
+            <p className="text-zinc-500">Full report: 28 pages &mdash; architecture, security, scalability, team assessment</p>
+          </div>
         </div>
       </div>
 
       {/* trust */}
       <p className="mt-14 text-sm text-zinc-600">
-        Code standards certified by{" "}
-        <span className="text-zinc-400">University College Dublin</span> &mdash;{" "}
-        trusted by <span className="text-zinc-400">500+ developers</span> who ship with confidence
+        Verified{" "}
+        <span className="text-zinc-400">700+ hours</span> of software &amp; data engineering expertise &mdash;{" "}
+        <span className="text-zinc-400">University College Dublin</span>
       </p>
     </section>
   );
@@ -111,34 +109,34 @@ function Hero() {
 /* ──────────────────────── Features ────────────────────── */
 const features = [
   {
-    icon: Brain,
-    title: "Context-Aware AI",
-    desc: "Our models understand your full codebase, not just the current file. Get suggestions that actually fit your architecture.",
-  },
-  {
-    icon: Code2,
-    title: "Production-Ready Output",
-    desc: "Generated code follows best practices with proper error handling, types, and tests included by default.",
-  },
-  {
-    icon: GitBranch,
-    title: "Git-Native Workflow",
-    desc: "Every generation creates a clean branch with atomic commits. Review diffs, not dumps.",
+    icon: FileSearch,
+    title: "Architecture Review",
+    desc: "Full-stack codebase analysis: folder structure, dependency graph, separation of concerns. We find what breaks at scale before your investors do.",
   },
   {
     icon: Shield,
-    title: "Enterprise Security",
-    desc: "SOC 2 compliant. Your code never leaves your VPC. On-prem deployment available.",
+    title: "Security Audit",
+    desc: "OWASP Top 10 scan, authentication flows, API security, data handling. Every vulnerability documented with severity and remediation steps.",
   },
   {
-    icon: Zap,
-    title: "Instant Deployment",
-    desc: "One-click deploy to Vercel, AWS, or any platform. CI/CD pipelines generated automatically.",
+    icon: Code2,
+    title: "Code Quality Assessment",
+    desc: "Standards-based review (UCD Dublin Full Stack methodology): type safety, error handling, test coverage, clean architecture patterns.",
   },
   {
-    icon: Terminal,
-    title: "CLI & API Access",
-    desc: "Integrate into your existing workflow with our CLI tool or REST API. Works with any stack.",
+    icon: BarChart3,
+    title: "Scalability Analysis",
+    desc: "Database design, query performance, caching strategy, infrastructure readiness. Can your stack handle 10x growth? We answer that.",
+  },
+  {
+    icon: BookOpen,
+    title: "28-Page Due Diligence Report",
+    desc: "Investor-ready documentation: executive summary, risk matrix, technical debt map, remediation roadmap with time estimates.",
+  },
+  {
+    icon: Lock,
+    title: "NDA-Protected Process",
+    desc: "Your code stays confidential. Secure review environment, no third-party access, full NDA before any engagement begins.",
   },
 ];
 
@@ -147,14 +145,14 @@ function Features() {
     <section id="features" className="mx-auto max-w-6xl px-6 py-32">
       <div className="text-center">
         <h2 className="text-3xl font-bold sm:text-5xl">
-          Everything you need to{" "}
-          <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-            ship faster
+          What we{" "}
+          <span className="bg-gradient-to-r from-amber-300 to-yellow-500 bg-clip-text text-transparent">
+            audit
           </span>
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
-          CodeSaaS.ai is not another autocomplete. It&apos;s a full-stack AI engineering platform
-          that understands context, writes clean code, and deploys it for you.
+          Technical due diligence for startups raising capital. We give investors
+          the confidence to write the check — or give founders the roadmap to get there.
         </p>
       </div>
 
@@ -162,9 +160,9 @@ function Features() {
         {features.map((f) => (
           <div
             key={f.title}
-            className="group rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 transition hover:border-violet-500/50 hover:bg-zinc-900"
+            className="group rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 transition hover:border-amber-500/40 hover:bg-zinc-900"
           >
-            <div className="mb-4 inline-flex rounded-lg bg-violet-600/10 p-2.5 text-violet-400 transition group-hover:bg-violet-600/20">
+            <div className="mb-4 inline-flex rounded-lg bg-amber-500/10 p-2.5 text-amber-400 transition group-hover:bg-amber-500/20">
               <f.icon size={22} />
             </div>
             <h3 className="text-lg font-semibold">{f.title}</h3>
@@ -177,48 +175,47 @@ function Features() {
 }
 
 /* ──────────────────────── Pricing ─────────────────────── */
-const plans = [
+const tiers = [
   {
-    name: "Starter",
-    price: "0",
-    desc: "For individual developers exploring AI-powered coding.",
+    name: "Code Health Check",
+    desc: "For founders who need a quick assessment before talking to investors.",
     features: [
-      "50 generations / month",
-      "Community support",
-      "Public repos only",
-      "CLI access",
+      "Architecture overview",
+      "Top 10 risk identification",
+      "Security surface scan",
+      "1-page executive summary",
+      "30-minute debrief call",
     ],
-    cta: "Start Free",
+    cta: "Request Quote",
     highlighted: false,
   },
   {
-    name: "Pro",
-    price: "29",
-    desc: "For professional developers shipping daily.",
+    name: "Full Due Diligence",
+    desc: "For startups in active fundraising. The report investors expect to see.",
     features: [
-      "Unlimited generations",
-      "Priority support",
-      "Private repos",
-      "API access",
-      "Team collaboration",
-      "Custom templates",
+      "Complete architecture review",
+      "OWASP security audit",
+      "Scalability stress analysis",
+      "Technical debt quantification",
+      "28-page investor-ready report",
+      "Remediation roadmap",
+      "2x debrief sessions",
     ],
-    cta: "Get Pro",
+    cta: "Request Quote for Due Diligence",
     highlighted: true,
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    desc: "For teams that need security, compliance & scale.",
+    name: "Enterprise Retainer",
+    desc: "For VCs and accelerators running multiple portfolio reviews.",
     features: [
-      "Everything in Pro",
-      "SOC 2 & HIPAA",
-      "On-prem deployment",
-      "SSO / SAML",
-      "Dedicated support",
-      "SLA guarantee",
+      "Everything in Full DD",
+      "Ongoing code monitoring",
+      "Quarterly re-assessments",
+      "Direct Slack channel",
+      "Priority 24h turnaround",
+      "Volume pricing",
     ],
-    cta: "Contact Sales",
+    cta: "Contact for Partnership",
     highlighted: false,
   },
 ];
@@ -228,51 +225,44 @@ function Pricing() {
     <section id="pricing" className="mx-auto max-w-6xl px-6 py-32">
       <div className="text-center">
         <h2 className="text-3xl font-bold sm:text-5xl">
-          Simple,{" "}
-          <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-            transparent
-          </span>{" "}
-          pricing
+          Engagement{" "}
+          <span className="bg-gradient-to-r from-amber-300 to-yellow-500 bg-clip-text text-transparent">
+            tiers
+          </span>
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-zinc-400">
-          Start free. Upgrade when you&apos;re ready. No hidden fees, no surprises.
+          Every engagement is scoped to your codebase. No fixed prices — because
+          auditing 5k lines and 500k lines are fundamentally different jobs.
         </p>
       </div>
 
       <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {plans.map((plan) => (
+        {tiers.map((tier) => (
           <div
-            key={plan.name}
+            key={tier.name}
             className={`relative flex flex-col rounded-xl border p-8 transition ${
-              plan.highlighted
-                ? "border-violet-500 bg-violet-600/5 shadow-lg shadow-violet-500/10"
+              tier.highlighted
+                ? "border-amber-500 bg-amber-500/5 shadow-lg shadow-amber-500/10"
                 : "border-zinc-800 bg-zinc-900/50 hover:border-zinc-700"
             }`}
           >
-            {plan.highlighted && (
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-violet-600 px-3 py-0.5 text-xs font-medium text-white">
-                Most Popular
+            {tier.highlighted && (
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-amber-500 px-3 py-0.5 text-xs font-semibold text-black">
+                Most Requested
               </span>
             )}
 
-            <h3 className="text-xl font-semibold">{plan.name}</h3>
-            <p className="mt-2 text-sm text-zinc-400">{plan.desc}</p>
+            <h3 className="text-xl font-semibold">{tier.name}</h3>
+            <p className="mt-2 text-sm text-zinc-400">{tier.desc}</p>
 
             <div className="mt-6">
-              {plan.price === "Custom" ? (
-                <span className="text-4xl font-bold">Custom</span>
-              ) : (
-                <>
-                  <span className="text-4xl font-bold">${plan.price}</span>
-                  <span className="text-zinc-400"> /mo</span>
-                </>
-              )}
+              <span className="text-3xl font-bold text-zinc-300">Custom Quote</span>
             </div>
 
             <ul className="mt-8 flex-1 space-y-3">
-              {plan.features.map((feat) => (
+              {tier.features.map((feat) => (
                 <li key={feat} className="flex items-center gap-2 text-sm text-zinc-300">
-                  <Check size={16} className="shrink-0 text-violet-400" />
+                  <Check size={16} className="shrink-0 text-amber-400" />
                   {feat}
                 </li>
               ))}
@@ -280,12 +270,12 @@ function Pricing() {
 
             <button
               className={`mt-8 w-full rounded-lg py-3 font-medium transition ${
-                plan.highlighted
-                  ? "bg-violet-600 text-white hover:bg-violet-500"
+                tier.highlighted
+                  ? "bg-amber-500 text-black hover:bg-amber-400"
                   : "border border-zinc-700 text-zinc-300 hover:border-zinc-500 hover:text-white"
               }`}
             >
-              {plan.cta}
+              {tier.cta}
             </button>
           </div>
         ))}
@@ -300,10 +290,13 @@ function Footer() {
     <footer className="border-t border-zinc-800 px-6 py-12 text-center text-sm text-zinc-500">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
         <div className="flex items-center gap-2 font-semibold text-white">
-          <Rocket size={18} className="text-violet-400" />
+          <Rocket size={18} className="text-amber-400" />
           CodeSaaS.ai
         </div>
-        <p>&copy; {new Date().getFullYear()} CodeSaaS.ai. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} CodeSaaS.ai &mdash; Technical Due Diligence Platform.
+          Verified 700+ hours of software &amp; data engineering expertise.
+        </p>
       </div>
     </footer>
   );
