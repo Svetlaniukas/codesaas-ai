@@ -11,6 +11,9 @@ import {
   ArrowRight,
   Terminal,
   Sparkles,
+  ShieldCheck,
+  Clock,
+  ScanSearch,
 } from "lucide-react";
 
 /* ───────────────────────── Hero ───────────────────────── */
@@ -21,65 +24,85 @@ function Hero() {
       <div className="pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/20 blur-[120px]" />
 
       <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 px-4 py-1.5 text-sm text-zinc-400">
-        <Sparkles size={14} className="text-violet-400" />
-        Now in Public Beta
+        <ShieldCheck size={14} className="text-emerald-400" />
+        AI Security &amp; Code Modernization
       </span>
 
       <h1 className="max-w-4xl text-5xl font-bold leading-[1.1] tracking-tight sm:text-7xl">
-        Ship production code{" "}
-        <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-          10x faster
-        </span>{" "}
-        with AI
+        Your AI code is{" "}
+        <span className="bg-gradient-to-r from-red-400 to-orange-400 bg-clip-text text-transparent">
+          broken
+        </span>
+        .{" "}
+        <br className="hidden sm:block" />
+        We fix &amp; deploy it{" "}
+        <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+          in 1 hour
+        </span>
       </h1>
 
       <p className="mt-6 max-w-2xl text-lg text-zinc-400 sm:text-xl">
-        CodeSaaS.ai turns your ideas into production-ready applications. Describe what you need —
-        get clean, tested, deployable code in seconds.
+        We take your legacy or AI-generated code, clean it to production standards
+        (UCD Dublin Full Stack methodology), and deploy it — before your coffee gets cold.
       </p>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
         <a
           href="#pricing"
-          className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-6 py-3 font-medium text-white transition hover:bg-violet-500"
+          className="group inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-7 py-3.5 font-semibold text-white transition hover:bg-emerald-500 hover:shadow-lg hover:shadow-emerald-500/20"
         >
-          Get Started Free <ArrowRight size={16} />
-        </a>
-        <a
-          href="#features"
-          className="inline-flex items-center gap-2 rounded-lg border border-zinc-800 px-6 py-3 font-medium text-zinc-300 transition hover:border-zinc-600 hover:text-white"
-        >
-          See Features
+          <ScanSearch size={18} />
+          Get a Free Code Audit in 5 Minutes
+          <ArrowRight size={16} className="transition group-hover:translate-x-1" />
         </a>
       </div>
 
+      {/* value props */}
+      <div className="mt-14 flex flex-wrap items-center justify-center gap-8 text-sm text-zinc-500">
+        <span className="inline-flex items-center gap-2">
+          <ShieldCheck size={16} className="text-emerald-400" />
+          Security-first refactoring
+        </span>
+        <span className="inline-flex items-center gap-2">
+          <Clock size={16} className="text-emerald-400" />
+          Deployed in under 1 hour
+        </span>
+        <span className="inline-flex items-center gap-2">
+          <Sparkles size={16} className="text-emerald-400" />
+          UCD Dublin standards
+        </span>
+      </div>
+
       {/* terminal preview */}
-      <div className="mt-16 w-full max-w-3xl overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl shadow-violet-500/5">
+      <div className="mt-16 w-full max-w-3xl overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl shadow-emerald-500/5">
         <div className="flex items-center gap-2 border-b border-zinc-800 px-4 py-3">
           <span className="h-3 w-3 rounded-full bg-red-500/80" />
           <span className="h-3 w-3 rounded-full bg-yellow-500/80" />
           <span className="h-3 w-3 rounded-full bg-green-500/80" />
-          <span className="ml-2 text-xs text-zinc-500">codesaas-cli</span>
+          <span className="ml-2 text-xs text-zinc-500">codesaas audit</span>
         </div>
         <div className="p-6 font-mono text-sm leading-relaxed text-zinc-300">
           <p>
-            <span className="text-violet-400">$</span> codesaas generate --prompt &quot;SaaS
-            dashboard with auth, billing &amp; analytics&quot;
+            <span className="text-emerald-400">$</span> codesaas audit ./client-project
           </p>
-          <p className="mt-2 text-zinc-500">Analyzing requirements...</p>
-          <p className="text-zinc-500">Generating 14 files across 3 modules...</p>
-          <p className="mt-2 text-green-400">
-            Done in 4.2s — project ready at ./my-saas-dashboard
+          <p className="mt-2 text-red-400">
+            Found 23 issues: 4 critical (XSS, SQL injection), 8 warnings, 11 style
           </p>
+          <p className="text-zinc-500">Fixing critical vulnerabilities...</p>
+          <p className="text-zinc-500">Refactoring to production standards...</p>
+          <p className="text-zinc-500">Running test suite... 47/47 passed</p>
+          <p className="mt-2 text-emerald-400">
+            Clean build. Deploying to production... Live at client-app.vercel.app
+          </p>
+          <p className="mt-1 text-zinc-600">Total time: 52 minutes</p>
         </div>
       </div>
 
-      {/* trust logos */}
+      {/* trust */}
       <p className="mt-14 text-sm text-zinc-600">
-        Trusted by engineers at <span className="text-zinc-400">Google</span>,{" "}
-        <span className="text-zinc-400">Stripe</span>,{" "}
-        <span className="text-zinc-400">Vercel</span> &{" "}
-        <span className="text-zinc-400">500+ teams</span>
+        Code standards certified by{" "}
+        <span className="text-zinc-400">University College Dublin</span> &mdash;{" "}
+        trusted by <span className="text-zinc-400">500+ developers</span> who ship with confidence
       </p>
     </section>
   );
