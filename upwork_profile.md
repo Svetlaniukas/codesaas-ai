@@ -70,7 +70,17 @@ Python fundamentals: OOP, data structures, scripting, automation.
 Applied to building internal tools and data pipelines.
 ```
 
-### 4. Diploma in Management (EU-Accredited)
+### 4. Professional Academy Certificate in Project Management
+- **Institution:** University College Dublin (UCD)
+- **Status:** In progress (completing 2026)
+
+```
+Professional project management methodology: Agile, Scrum, Waterfall,
+risk management, stakeholder communication, budgeting, and delivery
+planning. Applied to managing SaaS product development end-to-end.
+```
+
+### 5. Diploma in Management (EU-Accredited)
 - **Institution:** Kaliningrad State Technical University (KGTU)
 - **EU Recognition:** Credential accredited and verified in Ireland (QQI/NARIC equivalent)
 
