@@ -203,18 +203,20 @@ document management, and stakeholder communication.
 
 ## PORTFOLIO
 
-### 1. EasyFlowData.com — Production SaaS Platform
+### 1. EasyFlowData.com — Production SaaS Platform (Flagship)
 ```
-URL:      https://easyflowdata.com
+Live:     https://easyflowdata.com
 Type:     Autonomous AI Financial Control Platform
+Role:     Sole architect, developer, and PM (private codebase)
 
-Built a full production SaaS serving paying customers:
+Built and launched a full production SaaS from scratch:
 • 36+ pages with programmatic SEO (10 industry verticals)
 • Stripe billing: 3 plans (€29/79/149), trial management, webhooks
 • AI CFO: 3-provider failover (DeepSeek → OpenAI → Claude)
 • Automated P&L, anomaly detection, duplicate payment finder
 • Enterprise: QuickBooks/Xero sync via Merge.dev
-• 98% production readiness score (investor-grade audit)
+• 98% production readiness score, 100+ automated tests
+• Lighthouse: 98 Performance, 100 SEO, 100 Best Practices
 
 Stack: React 19, FastAPI, MongoDB, Redis, S3, Stripe, Sentry
 ```
@@ -264,8 +266,9 @@ Agile / Scrum                  Full Stack Development
 ## RATE
 
 ```
-$65/hour (negotiable for long-term projects)
-Also available for fixed-price contracts.
+$38/hour
+Open to fixed-price contracts.
+Discount for long-term engagements (3+ months).
 ```
 
 ---
