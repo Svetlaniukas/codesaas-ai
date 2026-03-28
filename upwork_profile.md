@@ -105,6 +105,24 @@ End-to-end ML pipelines: preprocessing, feature engineering,
 model selection, hyperparameter tuning, production deployment.
 ```
 
+### Cluster Analysis in Python
+- **Provider:** DataCamp
+- **Duration:** 4 hours | **Completed:** October 2023
+
+```
+Unsupervised learning: K-means, hierarchical clustering, DBSCAN.
+Applied to customer segmentation and financial data grouping.
+```
+
+### Statistical Thinking in Python (Part 1)
+- **Provider:** DataCamp
+- **Duration:** 3 hours | **Completed:** August 2023
+
+```
+Statistical foundations: probability distributions, hypothesis testing,
+bootstrap sampling. Applied to anomaly detection in financial datasets.
+```
+
 ---
 
 ## EMPLOYMENT HISTORY
