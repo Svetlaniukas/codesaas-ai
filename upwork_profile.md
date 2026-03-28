@@ -133,6 +133,15 @@ practical applications for business automation. Foundation for building
 AI-integrated SaaS products.
 ```
 
+### Understanding Machine Learning
+- **Provider:** DataCamp
+- **Duration:** 2 hours | **Completed:** August 2023
+
+```
+ML theory foundations: supervised vs unsupervised learning, model
+evaluation, bias-variance tradeoff, real-world ML workflows.
+```
+
 ---
 
 ## EMPLOYMENT HISTORY
