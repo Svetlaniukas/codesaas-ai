@@ -70,12 +70,16 @@ Python fundamentals: OOP, data structures, scripting, automation.
 Applied to building internal tools and data pipelines.
 ```
 
-### 4. Diploma in Management
-- **Institution:** KGTU Kaliningrad
+### 4. Diploma in Management (EU-Accredited)
+- **Institution:** Kaliningrad State Technical University (KGTU)
+- **EU Recognition:** Credential accredited and verified in Ireland (QQI/NARIC equivalent)
 
 ```
-Business management fundamentals. Applied directly to running
-my own company for 8 years and managing client projects.
+University degree in Management — accredited through the Irish
+credential recognition system for use in the EU. Covers business
+strategy, operations, finance, and organizational management.
+Applied directly to running my own company for 8 years in Dublin
+and managing technical projects as a PM.
 ```
 
 ---
