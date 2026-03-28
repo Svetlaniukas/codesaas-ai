@@ -123,6 +123,16 @@ Statistical foundations: probability distributions, hypothesis testing,
 bootstrap sampling. Applied to anomaly detection in financial datasets.
 ```
 
+### Introduction to ChatGPT
+- **Provider:** DataCamp
+- **Duration:** 1 hour | **Completed:** August 2023
+
+```
+AI prompt engineering fundamentals, LLM capabilities and limitations,
+practical applications for business automation. Foundation for building
+AI-integrated SaaS products.
+```
+
 ---
 
 ## EMPLOYMENT HISTORY
